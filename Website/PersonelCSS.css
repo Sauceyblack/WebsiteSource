@@ -1,0 +1,215 @@
+span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+  min-height:100%;
+  margin:0;
+  padding:0;
+  background:transparent;
+}
+.headbackground {
+  z-index: 1;
+  position: fixed;
+  height: 140px;
+  width:100%;
+}
+a {
+  z-index: 6;
+  min-height:100%;
+  margin:0;
+  padding:0;
+  background:transparent;
+  color: white;
+  text-decoration: none;
+}
+.wrapper {
+  margin: 0 auto;
+}
+body {
+  margin:0;
+  padding:0;
+  height: 100%;
+  width:100%;
+  background: white;
+}
+header {
+  min-width: 1400px;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, .5);
+  -moz-box-shadow:    0px 3px 5px rgba(0, 0, 0, .5);
+  box-shadow:         0px 3px 5px rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  color: white;
+  bottom:0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/headerbackground.svg");
+  background-repeat:no-repeat;
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  -ms-transition: height 0.2s;
+  -o-transition: height 0.2s;
+  transition: height 0.2s;
+}
+  header.smaller {
+    transition: height 0.2s;
+    transition: 0.2s;
+    background: transparent;
+    line-height: 50px;
+    height: 50px;
+    color: transparent;
+  }
+
+.header {
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  padding-top: 20px;
+  padding-bottom: 5px;
+  min-width: inherit;
+  margin-top: 20px;
+  margin: auto;
+  vertical-align: bottom;
+  text-align:center;
+  font-weight: lighter;
+  background: transparent;
+  width: 50%;
+  color: inherit;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 22pt;
+
+}
+.headersubtext {
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  padding-top: 5px;
+  margin-top: 0;
+  margin: auto;
+  border-top: 1px solid rgba(255, 255, 255, .6);
+  vertical-align: top;
+  opacity:0.8;
+  width: 30%;
+  text-align:center;
+  font-weight: 100;
+  background: transparent;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:15pt;
+}
+#fancytext {
+  margin-top: 180px;
+  padding: 20px;
+  color:black;
+  text-align: center;
+  background: transparent;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 25pt;
+  opacity: .7;
+}
+#box {
+  background: transparent;
+  margin: auto;
+  width:600px;
+}
+
+#linkmenu {
+  position:absolute;
+  width:100%;
+  bottom:0;
+  left:0;
+  z-index: 2;
+  height: 50px;
+  line-height: 50px;
+  background: rgb(10, 10, 10);
+}
+#innerlinkmenu {
+  margin: auto;
+  width: 60%;
+  z-index: 3;
+}
+#linkboxbox {
+  position: relative;
+  z-index: 4;
+  width: 20%;
+  float: left;
+  line-height: inherit;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+#linklink {
+  position: relative;
+  z-index: 5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: inherit;
+  font-weight: lighter;
+  vertical-align: middle;
+  font-size: 14pt;
+  text-align: center;
+  color: white;
+  opacity: .7;
+  transition-duration: .8s;
+  transition: opacity 0.8s;
+}
+#linklink:hover {
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: inherit;
+  background: transparent;
+  vertical-align: middle;
+  font-weight: lighter;
+  font-size: 18pt;
+  text-align: center;
+  text-shadow: 3px 3px 3px black;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+#footer{
+  border-top: 20px solid rgb(10, 10, 10);
+  min-width: 1400px;
+  height: 60px;
+  line-height: 60px;
+  background-image: url("images/footerbackground.svg");
+  background-size: cover;
+}
+#footercolumn {
+  width: 50%;
+  float:left;
+}
+#footertext {
+  vertical-align: sub;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  color: white;
+  font-size: 15pt;
+  text-align: center;
+}
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+}
+
+.resumewrapper {
+  background: grey;
+  width:100%;
+
+}
+#resume {
+  background:black;
+  width: 500px;
+  height: 500px;
+}

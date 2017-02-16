@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="PersonelCSS.css" type="text/css">
+<div class="wrapper">
+<header>
+  <script>
+  function init() {
+      window.addEventListener('scroll', function(e){
+          var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+              shrinkOn = 40;
+
+              header = document.querySelector("header");
+          if (distanceY > shrinkOn) {
+              classie.add(header,"smaller");
+          } else {
+              if (classie.has(header,"smaller")) {
+                  classie.remove(header,"smaller");
+
+              }
+          }
+      });
+  }
+  window.onload = init();
+
+  </script>
+
+  <div class="header">
+    Thomas Braun
+  </div>
+  <div class="headersubtext">
+    Software Engineer || Animator
+  </div>
+
+
+  <div id="linkmenu">
+    <div id="innerlinkmenu">
+      <div id="linkboxbox">
+        <div id="linklink">
+          <a href="https://github.com/Sauceyblack">Github</a>
+        </div>
+      </div>
+      <div id="linkboxbox">
+        <div id="linklink">
+          <a href="https://sketchfab.com/saucyblak">Sketchfab</a>
+        </div>
+      </div>
+      <div id="linkboxbox">
+        <div id="linklink">
+          <a href="https://www.linkedin.com/in/thomas-braun-74812012a">Linkedin</a>
+        </div>
+      </div>
+      <div id="linkboxbox">
+        <div id="linklink">
+          <a href="resumepage.html">Resume</a>
+        </div>
+      </div>
+      <div id="linkboxbox">
+        <div id="linklink">
+          <a href="art.html">Art</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script src="js/jquery-3.1.1.js"></script>
+
+<body>
+
+<div id="box">
+  <div id="fancytext">
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+      illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+      explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+      odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+      voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+      quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+      eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+      voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+      corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+      nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+      nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+      voluptas nulla pariatur?
+      accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+      voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+      corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+      nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+      nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+      voluptas nulla pariatur?
+    </p>
+  </div>
+</div>
+
+
+<div id="footer">
+  <div id="footercolumn">
+    <div id="footertext">
+      thomasbraun0@gmail.com
+    </div>
+  </div>
+
+  <div id="footercolumn">
+    <div id="footertext">
+      (908)-868-3328
+    </div>
+  </div>
+</div>
+
+
+
+<script src="js/classie.js"></script>
+
+</body>
+</div>
